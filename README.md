@@ -10,16 +10,16 @@ We fetch large-scale conversations from Hugging Face (lmsys/lmsys-chat-1m), extr
 The pipeline includes parallel processing, dataset handling, database integration, visualization, and NLP model inference, making this a real-world production-style workflow.
 
 🚀 Features
-Feature	Status	Details
-Google Drive Mounted	✔	All data stored automatically in Drive
-Hugging Face Dataset Integration	✔	Uses lmsys/lmsys-chat-1m
-Extract Only AI Assistant Messages	✔	Filters message role intelligently
-Regex-Based Data Cleaning	✔	Removes URLs, symbols, formatting noise
-Parallel Processing	✔	Used in extraction + cleaning
-Database Storage (No manual folders)	✔	Stored in SQLite .db with 3 tables
-Transformer Emotion Model	✔	j-hartmann/emotion-english-distilroberta-base
-Output Visualization	✔	Pie + Bar Graph for emotion distribution
-Real World Project Standard	✔	Production-ready modular pipeline
+Feature	
+Google Drive Mounted	
+Hugging Face Dataset Integration	
+Extract Only AI Assistant Messages	
+Regex-Based Data Cleaning	
+Parallel Processing	
+Database Storage (No manual folders)	
+Transformer Emotion Model	
+Output Visualization	
+Real World Project Standard	
 🧠 Tech Stack
 
 Python
@@ -43,9 +43,9 @@ Matplotlib
 Google Colab + Google Drive
 
 📂 Data Flow Architecture
-         Hugging Face Dataset
+              Hugging Face Dataset
                    ↓
-         Extract Assistant Messages
+              Extract Assistant Messages
                    ↓ (parallel)
               raw_data table
                    ↓ (regex + parallel)
@@ -53,9 +53,9 @@ Google Colab + Google Drive
                    ↓ (Emotion Model)
               output_data table
                    ↓
-         Visualisation (Pie/Bar Charts)
+              Visualisation (Pie/Bar Charts)
                    ↓
-         Stored in Google Drive DB
+             Stored in Google Drive DB
 
 📌 Database Structure
 Table Name	Description
