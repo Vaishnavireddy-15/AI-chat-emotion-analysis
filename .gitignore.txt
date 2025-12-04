@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (large data should not be on GitHub)
+data/
+*.csv
+*.json
+*.txt
+
+# Models
+models/
+*.pkl
+*.bin
+
+# Virtual environments
+venv/
+.env/
+
+# OS/system files
+.DS_Store
+thumbs.db
